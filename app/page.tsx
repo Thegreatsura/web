@@ -1,4 +1,4 @@
-import { PaymentPage } from "@/components/auth/payment-page";
+import { PaymentPage } from "@/components/payment-page/payment-page";
 
 export default function Home() {
   return <PaymentPage />;

@@ -14,18 +14,10 @@ import { MdOutlineInfo } from "react-icons/md";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Telebirr } from "../payment-page/telebirr";
-import { Awashbank } from "../payment-page/awashbank";
-import { CBEbirr } from "../payment-page/CBEbirr";
+import { Awashbank, CBEbirr, Telebirr } from "./icons";
+import { Textarea } from "@/components/ui/textarea"
 
 export function PaymentMethod() {
-  const [first, setfirst] = useState(false);
-
-  useEffect(() => {
-    setfirst(true);
-  }, []);
-
-  if (!first) return null;
   return (
     <Card>
       <CardHeader>
@@ -75,11 +67,11 @@ export function PaymentMethod() {
         </div>
         <div className="grid gap-2">
           <Label htmlFor="number">Receipt or Transaction number</Label>
-          <Input id="number" placeholder="BDN3QWGGGH" />
+          <Input id="number" placeholder="BDN3QWGGGB" />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="number">Note (optional)</Label>
-          <Input id="number" placeholder="Thank you! 😊" />
+          <Textarea id="number" placeholder="Thank you! 😊" />
         </div>
         <div className="grid grid-cols-3 gap-4">
           <div className="grid gap-2"></div>

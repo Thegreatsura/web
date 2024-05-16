@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { UserAuthForm } from "./user-auth-form";
 
-export function AuthenticationPage() {
+export function AuthPage() {
   return (
     <>
       <div className="container grid relative  h-full flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0">
