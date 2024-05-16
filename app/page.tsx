@@ -1,5 +1,5 @@
-import TransactionPage from "@/components/transaction/transaction";
+import { PaymentPage } from "@/components/auth/payment-page";
 
 export default function Home() {
-  return <TransactionPage />;
+  return <PaymentPage />;
 }
