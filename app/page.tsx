@@ -1,5 +1,5 @@
 import { PaymentPage } from "@/components/payment-page/payment-page";
 
 export default function Home() {
-  return <PaymentPage />;
+  return <div>hello</div>;
 }
