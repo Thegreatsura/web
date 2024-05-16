@@ -29,7 +29,7 @@ export function PaymentMethod() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Payment Method</CardTitle>
+        <CardTitle>Payment Methods</CardTitle>
         <CardDescription>Select what you pay with.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-6">
