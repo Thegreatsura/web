@@ -1,4 +1,4 @@
-import { PaymentPage } from "@/components/payment-page/payment-page";
+import { PaymentPage } from "@/components/payment/payment-page";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
