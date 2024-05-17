@@ -1,13 +1,26 @@
-import { BentoDemo } from "@/components/magicui/test";
-import { AnimatedListDemo } from "@/components/magicui/test2";
-import { Hello } from "@/components/magicui/test3";
-import App from "@/components/magicui/test4";
-import Image from "next/image";
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from 'next/link'
+import { ModeToggle } from "@/components/mode-toggle"
+import { SiteFooter } from "@/components/site-footer"
+import { SiteHeader } from "@/components/site-header"
+import { cn } from "@/lib/utils";
+import { Home } from "@/components/home/home-page"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Hello />
-    </main>
-  );
+    <Home />
+  )
 }
+// export default function Home() {
+//   return ( 
+//     <div className="flex flex-col h-full">
+//       <SiteHeader />
+//       <div className="flex flex-1" />
+//       <Link href="/auth/signin" className={cn("w-24 mx-auto", buttonVariants())}>
+//         Get Started
+//       </Link>
+//       <div className="flex flex-1" />
+//       <SiteFooter />
+//     </div>
+//   )
+// }
